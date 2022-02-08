@@ -1,0 +1,10 @@
+--- lib2geom-1.1/2geom.pc.in.orig	2021-01-15 18:42:28.000000000 +0100
++++ lib2geom-1.1/2geom.pc.in	2022-02-08 16:21:55.187190307 +0100
+@@ -1,6 +1,6 @@
+ prefix=@CMAKE_INSTALL_PREFIX@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
++libdir=${exec_prefix}/lib@LIB_SUFFIX@
+ includedir=${prefix}/include
+ 
+ Name: 2geom
