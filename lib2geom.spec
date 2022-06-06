@@ -80,6 +80,7 @@ cd build
 %cmake .. \
 	-D2GEOM_TESTING:BOOL=OFF \
 	-D2GEOM_BUILD_SHARED=ON \
+	%{?with_python:-DCYTHON_EXECUTABLE=/usr/bin/cython3} \
 	%{?with_python:-D2GEOM_BOOST_PYTHON=ON} \
 	%{?with_python:-D2GEOM_CYTHON_BINDINGS=ON} \
 	-DCMAKE_SKIP_RPATH=ON \
