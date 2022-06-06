@@ -23,10 +23,11 @@ BuildRequires:	double-conversion-devel
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	gsl-devel
 BuildRequires:	gtk+3-devel >= 3.0
+BuildRequires:	libstdc++-devel >= 6:7
 BuildRequires:	pkgconfig
 %{?with_python:BuildRequires:	python3-Cython >= 0.16}
 %{?with_python:BuildRequires:	python3-devel >= 1:3.2}
-BuildRequires:	libstdc++-devel >= 6:7
+BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
