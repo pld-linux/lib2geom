@@ -27,6 +27,7 @@ BuildRequires:	libstdc++-devel >= 6:7
 BuildRequires:	pkgconfig
 %{?with_python:BuildRequires:	python3-Cython >= 0.16}
 %{?with_python:BuildRequires:	python3-devel >= 1:3.2}
+%{?with_python:BuildRequires:	python3-modules >= 1:3.2}
 BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
