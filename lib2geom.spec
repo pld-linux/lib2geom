@@ -9,7 +9,7 @@ Summary:	2Geom - easy 2D graphics library
 Summary(pl.UTF-8):	2Geom - łatwa biblioteka do grafiki 2D
 Name:		lib2geom
 Version:	1.3
-Release:	1
+Release:	2
 License:	LGPL v2.1 or MPL v1.1
 Group:		Libraries
 #Source0Download: https://gitlab.com/inkscape/lib2geom/-/tags
