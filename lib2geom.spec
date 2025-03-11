@@ -76,8 +76,8 @@ Wiązania Pythona do lib2geom oparte na bibliotece Boost.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P 0 -p1
+%patch -P 1 -p1
 
 %build
 install -d build
