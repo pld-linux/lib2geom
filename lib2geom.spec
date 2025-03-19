@@ -9,7 +9,7 @@ Summary:	2Geom - easy 2D graphics library
 Summary(pl.UTF-8):	2Geom - łatwa biblioteka do grafiki 2D
 Name:		lib2geom
 Version:	1.3
-Release:	5
+Release:	6
 License:	LGPL v2.1 or MPL v1.1
 Group:		Libraries
 #Source0Download: https://gitlab.com/inkscape/lib2geom/-/tags
@@ -17,6 +17,7 @@ Source0:	https://gitlab.com/inkscape/lib2geom/-/archive/%{version}/%{name}-%{ver
 # Source0-md5:	8e218809019702382465c5da8448dbda
 Patch0:		%{name}-pc.patch
 Patch1:		%{name}-python-install.patch
+Patch2:		boost.patch
 URL:		https://gitlab.com/inkscape/lib2geom
 BuildRequires:	boost-devel >= 1.60
 %{?with_python:BuildRequires:	boost-python3-devel >= 1.60}
@@ -78,6 +79,7 @@ Wiązania Pythona do lib2geom oparte na bibliotece Boost.
 %setup -q
 %patch -P 0 -p1
 %patch -P 1 -p1
+%patch -P 2 -p1
 
 %build
 install -d build
